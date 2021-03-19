@@ -1,4 +1,10 @@
 <h2>Post Create comp</h2>
-<textarea [(ngModel)]="enteredValue"></textarea>
-<button (click)="onAddPost()">Save Post</button>
+<mat-input-field>
+  <textarea matInput [(ngModel)]="enteredValue"></textarea>
+</mat-input-field>
+
+<mat-form-field>
+  <button matInput (click)="onAddPost()">Save Post</button>
+</mat-form-field>
+
 <p>{{newPost}}</p>
